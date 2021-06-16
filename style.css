@@ -1,0 +1,311 @@
+@charset "UTF-8";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #2b2b2b;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #2b2b2b;
+  text-decoration: none;
+}
+
+section {
+  text-align: center;
+}
+
+.u-content-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* ヘッダー */
+.header {
+  position: relative;
+  width: 100%;
+  height: 620px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  url('images/header.png');
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.header__nav {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 64px;
+}
+
+.header__nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav__logo {
+  font-family: myriad-pro, sans-serif;
+  font-size: 36px;
+}
+
+.hamburger-menu {
+  position: relative;
+  width: 32px;
+  height: 64px;
+  cursor: pointer;
+}
+
+.hamburger-menu__line,
+.hamburger-menu__line::before,
+.hamburger-menu__line::after {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: #fff;
+}
+
+.hamburger-menu__line::before,
+.hamburger-menu__line::after {
+  content: "";
+}
+
+.hamburger-menu__line {
+  top: 50%;
+}
+
+.hamburger-menu__line::before {
+  top: calc(50% - 8px);
+}
+
+.hamburger-menu__line::after {
+  top: calc(50% + 8px);
+}
+
+.header__title {
+  font-family: myriad-pro, sans-serif;
+  padding-top: 240px;
+  font-size: 120px;
+  font-weight: normal;
+}
+
+.header__title__sub {
+  font-family: myriad-pro, sans-serif;
+  word-spacing: 4px;
+}
+
+.header__title__sub::before,
+.header__title__sub::after {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 2px;
+  margin: 0 8px;
+  background: #fff;
+  vertical-align: middle;
+}
+
+/* コンセプト */
+.u-heading {
+  position: relative;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+.u-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 40px;
+  height: 1px;
+  background: #2b2b2b;
+  transform: translateX(-50%);
+}
+
+.u-text {
+  padding-bottom: 40px;
+  line-height: 1.8;
+  letter-spacing: 1.4px;
+}
+
+.concept {
+  width: 100%;
+  padding: 80px 0;
+  background: linear-gradient(#fff 70%, #ededed 30%);
+}
+
+.concept__image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* ワーク */
+.work {
+  width: 100%;
+  padding-top: 80px;
+}
+
+.work_content_heading {
+  font-size: 24px;
+  text-align: left;
+}
+.work_content_text {
+  text-align: left;
+  line-height: 1.8;
+  letter-spacing: 1.4px;
+}
+
+.work_gift_image {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+.work_wedding_image {
+  width: 100%;
+  height: 630px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+.work_decoration_image {
+  width: 100%;
+  height: 630px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+.work_for_yourself_image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+.work__contents {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 1680px;
+}
+
+.work_content {
+  width: 420px;
+  padding-bottom: 80px;
+}
+
+.work_content:nth-child(3) {
+  margin-top: 120px;
+}
+
+/* フローリスト */
+.florist {
+  width: 100%;
+  padding-top: 80px;
+  background: linear-gradient(#ededed 60%, #fff 40%);
+}
+
+.florist_persons {
+  display: flex;
+  justify-content: space-between;
+}
+.florist_person {
+  width: 300px;
+  padding-bottom: 40px;
+}
+.florist_person_image {
+  margin-bottom: 12px;
+  height: 180px;
+}
+
+/* ショップインフォメーション */
+.shopInformation {
+  width: 100%;
+  padding: 80px 0 120px;
+}
+.shopInformation_contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shopInformation__table {
+  width: 45%;
+  border-spacing: 16px;
+  text-align: left;
+  letter-spacing: 1.5px;
+  line-height: 2;
+}
+
+.shopInformation__table__heading {
+  width: 25%;
+  border-right: 1px solid #a0a0a0;
+}
+
+tbody {
+  vertical-align: inherit;
+}
+
+/* コンタクト */
+.contact {
+  padding: 80px 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+  url('images/contact_us.png');
+  background-size: cover;
+}
+
+.btn__contact {
+  position: relative;
+  display: inline-block;
+  width: 360px;
+  padding-left: 40px;
+  height: 80px;
+  line-height: 80px;
+  letter-spacing: 2px;
+  border: 1px solid #a0a0a0;
+  background: #fff;
+  font-size: 20px;
+}
+
+.btn__contact::before,
+.btn__contact::after {
+  content: '';
+  position: absolute;
+  border-radius: 2px;
+}
+.btn__contact::before {
+  top: 30px;
+  left: 85px;
+  width: 30px;
+  height: 20px;
+  border: 1px solid #2b2b2b;
+}
+.btn__contact::after {
+  top: 21px;
+  left: 90px;
+  width: 20px;
+  height: 20px;
+  border-right: 1px solid #2b2b2b;
+  border-bottom: 1px solid #2b2b2b;
+  transform: rotate(45deg);
+}
+
+/* フッター */
+.footer__copyright {
+  display: block;
+  text-align: center;
+}
